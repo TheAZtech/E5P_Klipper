@@ -13,7 +13,7 @@
 ### the listed folders, just keep that line commented out.        ###
 #####################################################################
 ### Path to your config folder you want to backup
-config_folder=~/printer_data/config
+config_folder=~/klipper_config/
 
 # NOTE: The above should work for just about everyone, but a somewhat
 # recent update to moonraker changed paths, etc. You can run the 
@@ -66,7 +66,9 @@ grab_version(){
 # then update the command below to use the token. Run the command in your base directory and it will
 # handle auth. This should just be executed in your shell and not committed to any files or
 # Github will revoke the token. =)
-# git remote set-url origin https://XXXXXXXXXXX@github.com/EricZimmerman/Voron24Configs.git/
+
+git remote set-url origin https://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@github.com/TheAZtech/E5P_Klipper.git
+
 # Note that that format is for changing things after the repository is in use, vs initially
 
 push_config(){
