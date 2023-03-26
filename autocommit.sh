@@ -62,15 +62,6 @@ grab_version(){
   fi
 }
 
-# To fully automate this and not have to deal with auth issues, generate a legacy token on Github
-# then update the command below to use the token. Run the command in your base directory and it will
-# handle auth. This should just be executed in your shell and not committed to any files or
-# Github will revoke the token. =)
-
-git remote set-url origin https://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@github.com/TheAZtech/E5P_Klipper.git
-
-# Note that that format is for changing things after the repository is in use, vs initially
-
 push_config(){
   cd $config_folder
   git pull origin master
